@@ -1,0 +1,173 @@
+import { ThemeConfig } from '../types/portfolio';
+
+export interface ThemePreset extends ThemeConfig {
+  description: string;
+  previewGradient: string;
+  badge: string;
+  isPopular?: boolean;
+}
+
+export const THEME_PRESETS: ThemePreset[] = [
+  {
+    id: 'modern-dark',
+    name: 'Obsidian Minimal',
+    category: 'Developer',
+    description: 'Sleek dark interface with luminous accents, razor-sharp typography, and engineering-grade clarity.',
+    previewGradient: 'from-slate-950 via-slate-900 to-indigo-950',
+    badge: 'Popular',
+    isPopular: true,
+    primaryColor: '#6366f1', // Indigo
+    secondaryColor: '#38bdf8', // Sky
+    backgroundColor: '#090d16',
+    cardBackground: '#0f172a',
+    textColor: '#f8fafc',
+    mutedTextColor: '#94a3b8',
+    fontFamily: 'sans',
+    fontSize: 'base',
+    borderRadius: 'lg',
+    buttonStyle: 'solid',
+    layout: 'standard',
+    isDark: true,
+  },
+  {
+    id: 'studio-editorial',
+    name: 'Atelier Editorial',
+    category: 'Designer',
+    description: 'High-contrast typography, generous whitespace, warm alabaster tones inspired by contemporary design studios.',
+    previewGradient: 'from-stone-100 via-amber-50 to-orange-50',
+    badge: 'Award Winner',
+    isPopular: true,
+    primaryColor: '#1c1917', // Warm black
+    secondaryColor: '#b45309', // Amber
+    backgroundColor: '#faf8f5',
+    cardBackground: '#ffffff',
+    textColor: '#1c1917',
+    mutedTextColor: '#78716c',
+    fontFamily: 'serif',
+    fontSize: 'base',
+    borderRadius: 'sm',
+    buttonStyle: 'solid',
+    layout: 'minimal',
+    isDark: false,
+  },
+  {
+    id: 'cyber-terminal',
+    name: 'Matrix Cyberpunk',
+    category: 'Developer',
+    description: 'Monospace syntax styling, high-contrast emerald neon accents, and raw code aesthetics for hackers.',
+    previewGradient: 'from-black via-zinc-950 to-emerald-950',
+    badge: 'Tech',
+    primaryColor: '#10b981', // Emerald
+    secondaryColor: '#06b6d4', // Cyan
+    backgroundColor: '#050707',
+    cardBackground: '#0d1312',
+    textColor: '#ecfdf5',
+    mutedTextColor: '#6ee7b7',
+    fontFamily: 'mono',
+    fontSize: 'sm',
+    borderRadius: 'none',
+    buttonStyle: 'outline',
+    layout: 'standard',
+    isDark: true,
+  },
+  {
+    id: 'nordic-clean',
+    name: 'Nordic Clean',
+    category: 'Minimal',
+    description: 'Crisp scandinavian minimalism, serene cool slate, soft rounded cards, and unhurried whitespace.',
+    previewGradient: 'from-slate-50 via-sky-50/30 to-indigo-50/20',
+    badge: 'Clean',
+    primaryColor: '#2563eb', // Blue
+    secondaryColor: '#475569', // Slate
+    backgroundColor: '#f8fafc',
+    cardBackground: '#ffffff',
+    textColor: '#0f172a',
+    mutedTextColor: '#64748b',
+    fontFamily: 'sans',
+    fontSize: 'base',
+    borderRadius: 'xl',
+    buttonStyle: 'solid',
+    layout: 'standard',
+    isDark: false,
+  },
+  {
+    id: 'growth-marketer',
+    name: 'Vibrant Marketer',
+    category: 'Marketer',
+    description: 'High-conversion aesthetic with dynamic violet gradients, bold metric callouts, and punchy headlines.',
+    previewGradient: 'from-slate-950 via-purple-950 to-fuchsia-950',
+    badge: 'High Conversion',
+    primaryColor: '#a855f7', // Purple
+    secondaryColor: '#ec4899', // Pink
+    backgroundColor: '#0b0a14',
+    cardBackground: '#131124',
+    textColor: '#fdf4ff',
+    mutedTextColor: '#d8b4fe',
+    fontFamily: 'heading',
+    fontSize: 'base',
+    borderRadius: 'lg',
+    buttonStyle: 'glass',
+    layout: 'standard',
+    isDark: true,
+  },
+  {
+    id: 'executive-csuite',
+    name: 'Executive Midnight',
+    category: 'Executive',
+    description: 'Deep midnight navy paired with champagne gold accents, tailored for advisors, executives, and consultants.',
+    previewGradient: 'from-slate-950 via-slate-900 to-amber-950/40',
+    badge: 'Executive',
+    primaryColor: '#f59e0b', // Gold / Amber
+    secondaryColor: '#94a3b8',
+    backgroundColor: '#030712',
+    cardBackground: '#0b1120',
+    textColor: '#f8fafc',
+    mutedTextColor: '#94a3b8',
+    fontFamily: 'serif',
+    fontSize: 'base',
+    borderRadius: 'md',
+    buttonStyle: 'solid',
+    layout: 'standard',
+    isDark: true,
+  },
+  {
+    id: 'neo-brutalist',
+    name: 'Neo-Brutalist Pop',
+    category: 'Creative',
+    description: 'Bold black borders, playful drop shadows, canary yellow accents, and uninhibited creative attitude.',
+    previewGradient: 'from-amber-100 via-yellow-100 to-orange-100',
+    badge: 'Trendy',
+    primaryColor: '#000000',
+    secondaryColor: '#eab308',
+    backgroundColor: '#fffbeb',
+    cardBackground: '#ffffff',
+    textColor: '#000000',
+    mutedTextColor: '#525252',
+    fontFamily: 'heading',
+    fontSize: 'base',
+    borderRadius: 'none',
+    buttonStyle: 'brutalist',
+    layout: 'creative',
+    isDark: false,
+  },
+  {
+    id: 'aurora-glass',
+    name: 'Aurora Glassmorphism',
+    category: 'Modern',
+    description: 'Translucent glass frosted panels with glowing background orbs and soft futuristic gradients.',
+    previewGradient: 'from-indigo-950 via-slate-900 to-teal-950',
+    badge: 'Futuristic',
+    primaryColor: '#14b8a6', // Teal
+    secondaryColor: '#818cf8', // Indigo
+    backgroundColor: '#040b14',
+    cardBackground: '#0a1626',
+    textColor: '#f0fdfa',
+    mutedTextColor: '#99f6e4',
+    fontFamily: 'sans',
+    fontSize: 'base',
+    borderRadius: 'xl',
+    buttonStyle: 'glass',
+    layout: 'standard',
+    isDark: true,
+  }
+];

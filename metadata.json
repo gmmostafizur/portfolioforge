@@ -1,0 +1,8 @@
+{
+  "name": "PortfolioForge AI",
+  "description": "Create your professional portfolio website in minutes with AI-powered content generation, responsive themes, and custom publishing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
